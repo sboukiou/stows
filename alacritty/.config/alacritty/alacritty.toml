@@ -1,0 +1,11 @@
+#test
+
+
+[terminal.shell]
+program = "/usr/bin/tmux"
+
+[font]
+	size = 14
+	[font.normal]
+			family = "IosevkaTermSlab NFP"
+			style = "Medium"
