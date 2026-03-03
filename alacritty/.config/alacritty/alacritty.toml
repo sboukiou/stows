@@ -5,7 +5,7 @@
 program = "/usr/bin/tmux"
 
 [font]
-	size = 14
+	size = 15
 	[font.normal]
-			family = "IosevkaTermSlab NFP"
-			style = "Medium"
+			family = "UbuntuMono Nerd Font"
+		style = "Medium"
