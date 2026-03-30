@@ -8,26 +8,6 @@ return {
 			require('nordic').load()
 		end
 	},
-	-- lua/plugins/rose-pine.lua
-	{
-		"rose-pine/neovim",
-		name = "rose-pine",
-		config = function()
-			vim.cmd("colorscheme rose-pine")
-		end
-	},
-	{
-		'nvim-treesitter/nvim-treesitter',
-		require("lazy").setup({
-			{
-				"nvim-treesitter/nvim-treesitter",
-				branch = 'master',
-				lazy = false,
-				build = ":TSUpdate"
-			}
-		})
-
-	},
 	{
 		'nvim-lualine/lualine.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons' },
