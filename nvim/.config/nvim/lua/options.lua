@@ -5,7 +5,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.cursorline = true
 vim.opt.hlsearch = true
-vim.cmd.colorscheme 'nordic'
+vim.cmd.colorscheme 'catppuccin-mocha'
 vim.opt.colorcolumn= "88"
 
 vim.cmd([[
@@ -35,4 +35,7 @@ vim.cmd([[
   highlight SignColumn guibg=NONE ctermbg=NONE
   highlight EndOfBuffer guibg=NONE ctermbg=NONE
 ]])
+
+vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none" })
 

@@ -1,7 +1,7 @@
 # Main config file for [ Alacritty ]
 
 
-general.import = ["./rosepine.toml"]
+# general.import = ["./rosepine.toml"]
 
 [keyboard]
 bindings = [
@@ -11,8 +11,13 @@ bindings = [
 [terminal.shell]
 program = "/usr/bin/tmux"
 
+[window]
+	decorations = "None"
+	opacity = 0.4
+
 [font]
-	size = 12
+	size = 15
 	[font.normal]
-			family = "ZedMono Nerd Font"
-		style = "Medium"
+			family = "FantasqueSansM Nerd Font Propo"
+		style = "SemiBold"
+

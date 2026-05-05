@@ -1,13 +1,14 @@
 return {
 	-- ColorSchemes
 	{
-		'AlexvZyl/nordic.nvim',
+		'shaunsingh/nord.nvim',
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require('nordic').load()
+			require('nord').set()
 		end
 	},
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{
 		'nvim-lualine/lualine.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -21,4 +22,14 @@ return {
 			})
 		end,
 	},
+	{
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"MunifTanjim/nui.nvim",
+			"nvim-tree/nvim-web-devicons", -- optional, but recommended
+		},
+		lazy = false, -- neo-tree will lazily load itself
+	}
 }

@@ -13,10 +13,15 @@ vim.diagnostic.config({
 --------------------------------------------------
 function lsp.setupClangd()
 	vim.lsp.config.clangd = {
-		cmd = { "clangd", "--background-index" },
-		filetypes = { "c", "cpp", "objc", "objcpp" },
-	}
-	vim.lsp.enable("clangd")
+		cmd = { "clangd",
+		'--compile-commands-dir=build',
+		'--background-index',
+		'--clang-tidy',
+	},
+	root_markers = { 'compile_commands.json', 'CMakeLists.txt' },
+	filetypes = { "c", "cpp", "objc", "objcpp" },
+}
+vim.lsp.enable("clangd")
 end
 
 --------------------------------------------------
