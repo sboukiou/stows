@@ -12,7 +12,6 @@ vim.keymap.set('n', '<space>fg', tscp.live_grep)
 vim.keymap.set('n', '<space>mm', tscp.man_pages)
 vim.keymap.set('n', '<space>gc', tscp.man_pages)
 
--- LSP Keymaps
 -- Lsp mappings
 vim.keymap.set('n', '<space>gf', vim.lsp.buf.definition, {})
 vim.keymap.set('n', '<space>gd', vim.lsp.buf.declaration, {})
