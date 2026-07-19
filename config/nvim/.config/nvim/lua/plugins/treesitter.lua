@@ -1,8 +1,8 @@
 return {
 	{
 		'nvim-treesitter/nvim-treesitter',
-			dependencies = { 'neovim-treesitter/treesitter-parser-registry' },
+		branch = 'main',        -- THIS is the fix for 0.12 [citation:1][citation:12]
 			lazy = false,
-			build = ':TSUpdate',
+		build = ':TSUpdate',
 	}
 }
