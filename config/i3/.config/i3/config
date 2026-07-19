@@ -4,9 +4,9 @@ set $alt Mod1
 set $mod Mod4
 
 # autostart
-exec --no-startup-id feh --bg-fill /home/said/Pictures/pics/Courside-Sunset.png
-exec --no-startup-id nm-applet
-exec --no-startup-id picom -f
+exec --no-startup-id xrandr --output Virtual-1 --mode 1920x1080
+
+exec --no-startup-id feh --bg-fill /home/sboukiou/Pictures/Wallpapers/true_detective.jpeg
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec --no-startup-id  xinput set-prop 10 'libinput Tapping Enabled' 1
@@ -14,7 +14,7 @@ exec --no-startup-id blueman-applet
 
 # set font
 # font pango:JetBrains Mono 12
-font pango: UbuntuSansMono Nerd Font Bold, FontAwesome 12
+font pango: RecMonoCasual Nerd Font Bold, FontAwesome 12
 
 # use mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -108,8 +108,8 @@ bindsym $mod+r mode "resize"
 # panel
 bar {
 	status_command i3status
-	font pango:UbuntuSansMono Nerd Font 12
-	font pango: UbuntuSansMono Nerd Font Bold 12
+	font pango:RecMonoCasual Nerd Font 12
+	font pango: RecMonoCasual Nerd Font SemiBold 12
 	position top
 	workspace_min_width 24
 	padding 2px 8px 2px 8px
